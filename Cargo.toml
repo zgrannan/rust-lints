@@ -1,0 +1,3 @@
+[workspace]
+members = ["long_path"]
+resolver = "3"

@@ -1,0 +1,11 @@
+warning: 
+  --> $DIR/main.rs:2:19
+   |
+LL | fn long_type() -> std::collections::hash_map::HashMap<i32, i32> {
+   |                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   |
+   = help: consider importing: `use std::collections;`
+   = note: `#[warn(long_path)]` on by default
+
+warning: 1 warning emitted
+
