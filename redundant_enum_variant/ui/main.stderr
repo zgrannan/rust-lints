@@ -1,0 +1,11 @@
+warning: 
+  --> $DIR/main.rs:9:5
+   |
+LL |     fn render(&self) -> Output;
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   |
+   = help: every impl returns `Text(...)` — consider changing the return type to `std::string::String`
+   = note: `#[warn(redundant_enum_variant)]` on by default
+
+warning: 1 warning emitted
+

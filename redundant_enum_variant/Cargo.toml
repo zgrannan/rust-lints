@@ -1,5 +1,5 @@
 [package]
-name = "long_path"
+name = "redundant_enum_variant"
 version = "0.1.0"
 authors = ["authors go here"]
 description = "description goes here"

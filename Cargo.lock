@@ -132,8 +132,8 @@ checksum = "9330f8b2ff13f34540b44e946ef35111825727b38d33286ef986142615121801"
 
 [[package]]
 name = "clippy_utils"
-version = "0.1.92"
-source = "git+https://github.com/rust-lang/rust-clippy?rev=20ce69b9a63bcd2756cd906fe0964d1e901e042a#20ce69b9a63bcd2756cd906fe0964d1e901e042a"
+version = "0.1.94"
+source = "git+https://github.com/rust-lang/rust?rev=eda76d9d1d133effbf7facb28168fd78d75fd434#eda76d9d1d133effbf7facb28168fd78d75fd434"
 dependencies = [
  "arrayvec",
  "itertools",
@@ -904,6 +904,15 @@ dependencies = [
  "getrandom 0.2.17",
  "libredox",
  "thiserror 1.0.69",
+]
+
+[[package]]
+name = "redundant_enum_variant"
+version = "0.1.0"
+dependencies = [
+ "clippy_utils",
+ "dylint_linting",
+ "dylint_testing",
 ]
 
 [[package]]
