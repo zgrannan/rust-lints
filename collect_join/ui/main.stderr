@@ -1,0 +1,19 @@
+warning: 
+  --> $DIR/main.rs:5:13
+   |
+LL |     let _ = words.iter().map(|w| w.to_string()).collect::<Vec<_>>().join(", ");
+   |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   |
+   = help: use `itertools::Itertools::join` to avoid allocating a temporary `Vec`
+   = note: `#[warn(collect_join)]` on by default
+
+warning: 
+  --> $DIR/main.rs:8:13
+   |
+LL |     let _ = words.iter().map(|w| w.to_string()).collect::<Vec<String>>().join(" ");
+   |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   |
+   = help: use `itertools::Itertools::join` to avoid allocating a temporary `Vec`
+
+warning: 2 warnings emitted
+
