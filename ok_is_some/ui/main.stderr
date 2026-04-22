@@ -1,0 +1,11 @@
+warning: 
+  --> $DIR/main.rs:5:13
+   |
+LL |     let _ = r.ok().is_some();
+   |             ^^^^^^^^^^^^^^^^
+   |
+   = help: use `.is_ok()` instead
+   = note: `#[warn(ok_is_some)]` on by default
+
+warning: 1 warning emitted
+

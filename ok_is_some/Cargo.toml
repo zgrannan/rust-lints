@@ -1,8 +1,8 @@
 [package]
-name = "collect_join"
+name = "ok_is_some"
 version = "0.1.0"
 authors = ["Zack Grannan"]
-description = "description goes here"
+description = "Lint that checks for .ok().is_some() and suggests .is_ok() instead"
 edition = "2024"
 publish = false
 
