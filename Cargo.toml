@@ -3,4 +3,4 @@ members = ["long_path", "redundant_enum_variant", "collect_join", "ok_is_some"]
 resolver = "3"
 
 [patch."https://github.com/rust-lang/rust"]
-clippy_utils = { path = "/home/zgrannan/.cargo/git/checkouts/rust-a4081372e9049d90/eda76d9/src/tools/clippy/clippy_utils" }
+clippy_utils = { path = "vendor/clippy_utils" }
