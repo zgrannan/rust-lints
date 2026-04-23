@@ -1,0 +1,19 @@
+[package]
+name = "empty_if"
+version = "0.1.0"
+authors = ["Zack Grannan"]
+description = "Lint that warns on if-expressions with an empty then-block"
+edition = "2024"
+publish = false
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+dylint_linting = "5.0.0"
+
+[dev-dependencies]
+dylint_testing = "5.0.0"
+
+[package.metadata.rust-analyzer]
+rustc_private = true

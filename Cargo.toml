@@ -1,5 +1,5 @@
 [workspace]
-members = ["long_path", "redundant_enum_variant", "collect_join", "ok_is_some"]
+members = ["long_path", "redundant_enum_variant", "collect_join", "ok_is_some", "empty_if"]
 resolver = "3"
 
 [patch."https://github.com/rust-lang/rust"]

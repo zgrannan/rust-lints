@@ -1,0 +1,31 @@
+warning: 
+  --> $DIR/main.rs:7:5
+   |
+LL | /     if x.is_some() {} else {
+LL | |         println!("none");
+LL | |     }
+   | |_____^
+   |
+   = help: negate the condition and replace the empty then-block with the else body
+   = note: `#[warn(empty_if)]` on by default
+
+warning: 
+  --> $DIR/main.rs:12:5
+   |
+LL | /     if x.is_some() {} else if x.is_none() {
+LL | |         println!("none");
+LL | |     }
+   | |_____^
+   |
+   = help: negate the condition and replace the empty then-block with the else body
+
+warning: 
+  --> $DIR/main.rs:17:5
+   |
+LL |     if x.is_some() {}
+   |     ^^^^^^^^^^^^^^^^^
+   |
+   = help: the then-block is empty and there is no else; remove the entire `if`
+
+warning: 3 warnings emitted
+
