@@ -133,12 +133,19 @@ checksum = "9330f8b2ff13f34540b44e946ef35111825727b38d33286ef986142615121801"
 [[package]]
 name = "clippy_utils"
 version = "0.1.94"
-source = "git+https://github.com/rust-lang/rust?rev=eda76d9d1d133effbf7facb28168fd78d75fd434#eda76d9d1d133effbf7facb28168fd78d75fd434"
 dependencies = [
  "arrayvec",
  "itertools",
  "rustc_apfloat",
  "serde",
+]
+
+[[package]]
+name = "collect_join"
+version = "0.1.0"
+dependencies = [
+ "dylint_linting",
+ "dylint_testing",
 ]
 
 [[package]]
@@ -760,6 +767,14 @@ checksum = "91df4bbde75afed763b708b7eee1e8e7651e02d97f6d5dd763e89367e957b23b"
 dependencies = [
  "hermit-abi",
  "libc",
+]
+
+[[package]]
+name = "ok_is_some"
+version = "0.1.0"
+dependencies = [
+ "dylint_linting",
+ "dylint_testing",
 ]
 
 [[package]]
